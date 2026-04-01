@@ -1,0 +1,6 @@
+flask
+pdfplumber
+sentence-transformers
+faiss-cpu
+numpy
+requests
