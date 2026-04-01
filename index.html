@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Matcher</title>
+</head>
+<body>
+
+    <h1>AI Resume Matching System</h1>
+
+    <form method="POST">
+        <label>Enter Job Description:</label><br><br>
+        <textarea name="job_desc" rows="6" cols="60" placeholder="Enter job role like Data Scientist, Java Developer..."></textarea><br><br>
+        <button type="submit">Find Candidates</button>
+    </form>
+
+    {% if result %}
+        <h2>Top Matching Candidates:</h2>
+        <ul>
+            {% for candidate in result %}
+                <li>{{ candidate }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+</body>
+</html>
